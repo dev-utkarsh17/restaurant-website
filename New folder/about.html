@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - TasteBite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer>
+    // Toggle nav menu for mobile
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => nav.classList.toggle('show'));
+    });
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">TasteBite</div>
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="specials">
+    <h2>About TasteBite</h2>
+    <p>Welcome to TasteBite – where flavor meets passion. We are committed to delivering delicious dishes, cozy ambiance, and heartfelt hospitality.</p>
+    
+    <div style="max-width: 800px; margin: 2rem auto; text-align: left; line-height: 1.7;">
+      <p><strong>Our Story:</strong> Founded in 2020, TasteBite started as a small neighborhood café with a big dream — to bring people together over great food. Over the years, we’ve grown into a beloved dining destination known for our chef-inspired menu, fresh ingredients, and dedication to quality.</p>
+
+      <p><strong>Our Philosophy:</strong> At TasteBite, every dish is made with love and creativity. We believe food is more than just nourishment — it’s an experience. That’s why we craft our menu to reflect both timeless classics and innovative new flavors.</p>
+
+      <p><strong>Our Team:</strong> Behind every plate is a team of passionate chefs, servers, and staff who care deeply about making your visit exceptional. We strive to create a space that feels like home — warm, welcoming, and full of flavor.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TasteBite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

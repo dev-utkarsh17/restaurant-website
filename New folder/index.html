@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TasteBite - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => nav.classList.toggle('show'));
+    });
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">TasteBite</div>
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome To TasteBite</h1>
+      <p>Where food just only not made but crafted</p>
+      <a href="menu.html" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="specials">
+    <h2>Welcome to TasteBite</h2>
+    <p>We serve flavorful, freshly-prepared meals that delight your taste buds.</p>
+  </section>
+
+  <!-- Featured Menu Items -->
+  <section class="specials">
+    <h2>Chef’s Specials</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="pasta-image.jpg" alt="Pasta">
+        <h3>Redsauces Pasta</h3>
+        <p class="price">₹320</p>
+      </div>
+      <div class="menu-item">
+        <img src="burger.jpg" alt="Burger">
+        <h3>Loaded Cheese Burger</h3>
+        <p class="price">₹250</p>
+      </div>
+      <div class="menu-item">
+        <img src="momos.jpg" alt="Momos">
+        <h3>Steamed Chicken Momos</h3>
+        <p class="price">₹180</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="specials">
+    <h2>Why Choose TasteBite?</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="fresh.jpg" alt="Fresh Ingredients">
+        <h3>Fresh Ingredients</h3>
+        <p>Only the freshest produce and meats, delivered daily.</p>
+      </div>
+      <div class="menu-item">
+        <img src="chef.jpg" alt="Expert Chefs">
+        <h3>Expert Chefs</h3>
+        <p>Crafted by passionate chefs with years of experience.</p>
+      </div>
+      <div class="menu-item">
+        <img src="ambience.jpg" alt="Ambience">
+        <h3>Cozy Ambience</h3>
+        <p>Relaxed, elegant setting perfect for any occasion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="specials">
+    <h2>What Our Customers Say</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <p>“Absolutely delicious! The pasta was creamy and perfectly cooked.”</p>
+        <strong>- Aditi S.</strong>
+      </div>
+      <div class="menu-item">
+        <p>“Best burger in town! Super juicy and flavorful.”</p>
+        <strong>- Rohan M.</strong>
+      </div>
+      <div class="menu-item">
+        <p>“Love the cozy vibe and excellent service. Will visit again!”</p>
+        <strong>- Neha P.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book a Table CTA -->
+  <section class="specials">
+    <h2>Book Your Table Now</h2>
+    <p>Reserve your seat and enjoy an unforgettable dining experience.</p>
+    <a href="reservations.html" class="btn">Make a Reservation</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TasteBite. All rights reserved.</p>
+  </footer>
+</body>
+</html>

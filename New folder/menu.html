@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu - TasteBite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => nav.classList.toggle('show'));
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">TasteBite</div>
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="specials">
+    <h2>Our Menu</h2>
+    <p>Explore our carefully crafted dishes made with love and fresh ingredients.</p>
+  </section>
+
+  <section class="menu-section">
+    <h2>Starters</h2>
+    <div class="menu-items">
+      <div class="menu-item"><h3>Garlic Bread</h3><p>With herbs and cheese.</p></div>
+      <div class="menu-item"><h3>Redsauces pasta</h3><p>Tomatoes, basil, and olive oil.</p></div>
+      <div class="menu-item"><h3>Veg Spring Rolls</h3><p>Crispy and flavorful.</p></div>
+      <div class="menu-item"><h3>cheese buger</h3><p>Char-grilled cottage cheese.</p></div>
+      <div class="menu-item"><h3>Chicken Wings</h3><p>Spicy and smoky.</p></div>
+      <div class="menu-item"><h3>Stuffed Momos</h3><p>Cheesy and delicious.</p></div>
+      <div class="menu-item"><h3>Soup of the Day</h3><p>Ask our staff!</p></div>
+      <div class="menu-item"><h3>Nachos</h3><p>With cheese and jalapenos.</p></div>
+      <div class="menu-item"><h3>Veg Pakora</h3><p>Served with chutney.</p></div>
+      <div class="menu-item"><h3>Chicken Lollipop</h3><p>Deep-fried delight.</p></div>
+      <div class="menu-item"><h3>Mini Samosas</h3><p>Spiced potatoes in pastry.</p></div>
+      <div class="menu-item"><h3>Onion Rings</h3><p>Crispy and golden.</p></div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Main Course</h2>
+    <div class="menu-items">
+      <div class="menu-item"><h3>Paneer Butter Masala</h3><p>Rich creamy curry.</p></div>
+      <div class="menu-item"><h3>Chicken Biryani</h3><p>Fragrant rice and spices.</p></div>
+      <div class="menu-item"><h3>Veg Pulao</h3><p>Flavored rice and veggies.</p></div>
+      <div class="menu-item"><h3>Dal Makhani</h3><p>Slow-cooked lentils.</p></div>
+      <div class="menu-item"><h3>Butter Chicken</h3><p>Classic North Indian dish.</p></div>
+      <div class="menu-item"><h3>Chole Bhature</h3><p>Punjabi style.</p></div>
+      <div class="menu-item"><h3>Veg Fried Rice</h3><p>With soya and sauces.</p></div>
+      <div class="menu-item"><h3>Chicken Curry</h3><p>Home-style spicy curry.</p></div>
+      <div class="menu-item"><h3>Pasta Alfredo</h3><p>Creamy white sauce pasta.</p></div>
+      <div class="menu-item"><h3>Hakka Noodles</h3><p>Chinese-style stir-fry.</p></div>
+      <div class="menu-item"><h3>Rajma Chawal</h3><p>Comfort food classic.</p></div>
+      <div class="menu-item"><h3>Fish Curry</h3><p>Coconut-based curry.</p></div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Sweets</h2>
+    <div class="menu-items">
+      <div class="menu-item"><h3>Gulab Jamun</h3><p>Soft sweet dumplings.</p></div>
+      <div class="menu-item"><h3>Rasgulla</h3><p>Spongy and sweet.</p></div>
+      <div class="menu-item"><h3>Chocolate Brownie</h3><p>With ice cream.</p></div>
+      <div class="menu-item"><h3>Ice Cream</h3><p>Multiple flavors.</p></div>
+      <div class="menu-item"><h3>Jalebi</h3><p>Crispy and juicy.</p></div>
+      <div class="menu-item"><h3>Kheer</h3><p>Rice pudding.</p></div>
+      <div class="menu-item"><h3>Rasmalai</h3><p>Milk-based delight.</p></div>
+      <div class="menu-item"><h3>Ladoo</h3><p>Traditional sweets.</p></div>
+      <div class="menu-item"><h3>Fruit Custard</h3><p>Chilled and creamy.</p></div>
+      <div class="menu-item"><h3>Halwa</h3><p>Carrot/Suji/Moong Dal.</p></div>
+      <div class="menu-item"><h3>Apple Pie</h3><p>Served warm.</p></div>
+      <div class="menu-item"><h3>Cheesecake</h3><p>New York style.</p></div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Drinks</h2>
+    <div class="menu-items">
+      <div class="menu-item"><h3>Mango Lassi</h3><p>Sweet & chilled.</p></div>
+      <div class="menu-item"><h3>Cold Coffee</h3><p>With ice cream.</p></div>
+      <div class="menu-item"><h3>Masala Chai</h3><p>Indian spiced tea.</p></div>
+      <div class="menu-item"><h3>Lemonade</h3><p>Fresh and zesty.</p></div>
+      <div class="menu-item"><h3>Mint Mojito</h3><p>Refreshing and cool.</p></div>
+      <div class="menu-item"><h3>Orange Juice</h3><p>Freshly squeezed.</p></div>
+      <div class="menu-item"><h3>Buttermilk</h3><p>Spiced chhaas.</p></div>
+      <div class="menu-item"><h3>Green Tea</h3><p>For detox.</p></div>
+      <div class="menu-item"><h3>Smoothies</h3><p>Fruit blends.</p></div>
+      <div class="menu-item"><h3>Milkshakes</h3><p>Vanilla/Chocolate.</p></div>
+      <div class="menu-item"><h3>Coke / Sprite</h3><p>Chilled & fizzy.</p></div>
+      <div class="menu-item"><h3>Hot Chocolate</h3><p>Warm and rich.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TasteBite. All rights reserved.</p>
+  </footer>
+</body>
+</html>

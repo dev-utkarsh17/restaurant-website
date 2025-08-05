@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reservations - TasteBite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer>
+    // Toggle nav menu for mobile
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('nav ul');
+      toggle.addEventListener('click', () => nav.classList.toggle('show'));
+    });
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">TasteBite</div>
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reservations.html" class="active">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="specials">
+    <h2>Reserve a Table</h2>
+    <p>Plan your next visit! Reserve a table at TasteBite for an unforgettable dining experience.</p>
+
+    <form style="max-width: 600px; margin: auto; text-align: left;">
+      <label for="name">Full Name</label><br />
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="phone">Phone Number</label><br />
+      <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="date">Date</label><br />
+      <input type="date" id="date" name="date" required style="width: 100%; padding: 10px; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="time">Time</label><br />
+      <input type="time" id="time" name="time" required style="width: 100%; padding: 10px; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <label for="guests">Number of Guests</label><br />
+      <input type="number" id="guests" name="guests" min="1" max="20" required style="width: 100%; padding: 10px; margin-bottom: 1.5rem; border-radius: 5px; border: 1px solid #ccc;" />
+
+      <button type="submit" class="btn">Reserve Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TasteBite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
